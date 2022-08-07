@@ -1,0 +1,30 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/2
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "said",
+    "email": "said@gmail.com",
+    "nim": "201011440",
+    "gender": "laki-laki"
+}
+
+###
+PATCH  http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name" : "imam rifai",
+    "email": "imamrifai@gmail.com",
+    "nim": "201011470",
+    "gender": "laki-laki"
+}
+
+###
+DELETE   http://localhost:5000/users/4
+

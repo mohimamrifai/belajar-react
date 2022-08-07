@@ -1,0 +1,64 @@
+
+========== fase satu ===========
+
+1. membuat folder project
+2. npm init
+3. install dependencies
+4. membuat file index.js sesuai dengan npm
+
+        == // 1. import express
+                import express  from "express";
+            // 2. import cors
+            import cors from 'cors';
+
+            // 3. inisiate object express
+            const app = new express()
+
+            // 4. set up midleware cors
+            app.use(cors());
+
+            // 5. set up untuk menerima reques json
+            app.use(express.json()) 
+
+            // 6. running server 
+            app.listen(8000, () => console.log('server up'))
+        ==
+5. running server
+
+
+========== fase dua ===========
+1. membuat folder config
+2. membuat file Database.js
+3. Database js
+        == // 1. membuat koneksi
+            // 2. import sequelize
+            import sequelize from "sequelize";
+
+            // variable database
+            const db_name = 'database';
+            const db_username = 'root';
+            const db_password = '';
+
+            // 3. membuat database
+            const db = new sequelize(db_name, db_username, db_password, {
+                host: 'localhost',
+                dialect: 'mysql'
+            } );
+
+            // expoert database
+            export default db;
+        ==
+
+
+========== fase tiga ===========
+1. membuat folder models
+2. membuat file UserModel.js
+
+
+========== fase empat ===========
+1. membuat folder controllers
+2. membuat file UserController.js
+
+========== fase lima ===========
+1. membuat folder routes
+2. membuat file UserRoute.js
