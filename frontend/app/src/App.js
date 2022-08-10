@@ -1,5 +1,4 @@
 
-
 import Data from './components/Data';
 import Header from './components/Header';
 import ModalBox from './components/ModalBox';

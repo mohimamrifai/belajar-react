@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 
 function Data () {
 
@@ -37,7 +38,7 @@ function Data () {
                         <td>{item.nim}</td>
                         <td>{item.gender}</td>
                         <td>
-                            <button className='btn btn-sm btn-success'>Detail</button>
+                            <Link to={'/detail/' + item.id} className="btn btn-sm btn-success">Detail</Link>
                         </td>
                     </tr>
                     ))}
